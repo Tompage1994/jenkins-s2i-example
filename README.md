@@ -16,7 +16,9 @@ An example demonstrating Jenkins S2I features for installing plugins, configurin
   $ oc policy add-role-to-user edit -z default -n ci
   ```
 
-3. Install the provided OpenShift templates:
+3. Ensure `jenkins-slave-builder-template.yaml` and `jenkins-master-s2i-template.yaml` have their `REPO_URL` changed to the git repository this exists within
+
+4. Install the provided OpenShift templates:
 
   ```
   $ oc create -f jenkins-slave-builder-template.yaml   # For converting any S2I to Jenkins slave
@@ -29,7 +31,7 @@ An example demonstrating Jenkins S2I features for installing plugins, configurin
   $ oc new-app jenkins-slave-builder
   ```
 
-4. Create Jenkins master. You can customize the source repo and other configurations through template parameters. Note that this example doesn't define any [persistent volume](https://docs.openshift.com/enterprise/3.2/architecture/additional_concepts/storage.html). You need to define storage in order to retain Jenkins data on container restarts. 
+6. Create Jenkins master. You can customize the source repo and other configurations through template parameters. Note that this example doesn't define any [persistent volume](https://docs.openshift.com/enterprise/3.2/architecture/additional_concepts/storage.html). You need to define storage in order to retain Jenkins data on container restarts.
 
   ```
   $ oc new-app jenkins-master-s2i
