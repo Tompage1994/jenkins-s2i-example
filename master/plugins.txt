@@ -18,4 +18,4 @@ radiatorviewplugin:latest
 xunit:latest
 slack:latest
 rebuild:latest
-pre-scm-buildstep:latest
+preSCMbuildstep:latest
