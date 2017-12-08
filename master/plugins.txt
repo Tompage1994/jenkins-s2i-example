@@ -90,4 +90,4 @@ apache-httpcomponents-client-4-api: 4.5.3-2.0
 script-security: 1.34
 pipeline-model-extensions: 1.2.2
 git-client: 2.6.0
-Maven Integration plugin (maven-plugin: 3.0
+maven-plugin: 3.0
