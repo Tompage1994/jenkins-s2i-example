@@ -8,7 +8,7 @@ gogs-webhook:latest
 greenballs:latest
 htmlpublisher:latest
 jobConfigHistory:latest
-job-dsl:latest
+job-dsl:1.66
 mercurial:latest
 openshift-login:latest
 openshift-pipeline:latest
@@ -19,3 +19,8 @@ xunit:latest
 slack:latest
 rebuild:latest
 preSCMbuildstep:latest
+
+jquery:latest
+parameterized-trigger:latest
+jsch:latest
+claim:latest
